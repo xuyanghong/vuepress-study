@@ -1,0 +1,18 @@
+{
+  "name": "vuepress-study",
+  "version": "1.0.0",
+  "description": "'study FE'",
+  "main": "index.js",
+  "author": "xyh",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "4.14.1",
+    "sass": "^1.37.5",
+    "sass-loader": "7.3.1",
+    "vuepress": "^1.8.2"
+  }
+}
