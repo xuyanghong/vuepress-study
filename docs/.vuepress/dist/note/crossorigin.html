@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>crossorigin 和 integrity 属性</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="study FE">
+    
+    <link rel="preload" href="/assets/css/0.styles.f7b20a5d.css" as="style"><link rel="preload" href="/assets/js/app.7078bb13.js" as="script"><link rel="preload" href="/assets/js/2.b02ef293.js" as="script"><link rel="preload" href="/assets/js/27.7e17fed0.js" as="script"><link rel="prefetch" href="/assets/js/10.53f4b211.js"><link rel="prefetch" href="/assets/js/11.041ae1fb.js"><link rel="prefetch" href="/assets/js/12.ce74c4c0.js"><link rel="prefetch" href="/assets/js/13.ee75e0c1.js"><link rel="prefetch" href="/assets/js/14.2c7911de.js"><link rel="prefetch" href="/assets/js/15.63c33177.js"><link rel="prefetch" href="/assets/js/16.f9c341b0.js"><link rel="prefetch" href="/assets/js/17.5ade5891.js"><link rel="prefetch" href="/assets/js/18.12359373.js"><link rel="prefetch" href="/assets/js/19.3c9f4729.js"><link rel="prefetch" href="/assets/js/20.73adf050.js"><link rel="prefetch" href="/assets/js/21.0894217d.js"><link rel="prefetch" href="/assets/js/22.b6370da6.js"><link rel="prefetch" href="/assets/js/23.fdfae3aa.js"><link rel="prefetch" href="/assets/js/24.4f54ce80.js"><link rel="prefetch" href="/assets/js/25.5b10bcf5.js"><link rel="prefetch" href="/assets/js/26.42b43708.js"><link rel="prefetch" href="/assets/js/28.7c39ccc5.js"><link rel="prefetch" href="/assets/js/29.10468615.js"><link rel="prefetch" href="/assets/js/3.ec13fd5d.js"><link rel="prefetch" href="/assets/js/30.023c784c.js"><link rel="prefetch" href="/assets/js/31.1a453d5a.js"><link rel="prefetch" href="/assets/js/4.89d9f90c.js"><link rel="prefetch" href="/assets/js/5.2b08f192.js"><link rel="prefetch" href="/assets/js/6.4d0fa034.js"><link rel="prefetch" href="/assets/js/7.bd35968f.js"><link rel="prefetch" href="/assets/js/8.a446977e.js"><link rel="prefetch" href="/assets/js/9.93687678.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f7b20a5d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo3.jpeg" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/learning/" class="nav-link">
+  前端开发学习
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  前端开发工具
+</a></div><div class="nav-item"><a href="/error.html" class="nav-link">
+  附录：错误码
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/learning/" class="nav-link">
+  前端开发学习
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link">
+  前端开发工具
+</a></div><div class="nav-item"><a href="/error.html" class="nav-link">
+  附录：错误码
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/learning/" class="sidebar-heading clickable"><span>学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/note/" class="sidebar-heading clickable router-link-active open"><span>笔记</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/note/" aria-current="page" class="sidebar-link">note</a></li><li><a href="/note/crossorigin.html" aria-current="page" class="active sidebar-link">crossorigin 和 integrity 属性</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/note/model.html" class="sidebar-link">v-model</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/model.html#" class="sidebar-link"></a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/tools/" class="sidebar-heading clickable"><span>工具</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>error</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="crossorigin-和-integrity-属性"><a href="#crossorigin-和-integrity-属性" class="header-anchor">#</a> crossorigin 和 integrity 属性</h1> <h3 id="crossorigin"><a href="#crossorigin" class="header-anchor">#</a> crossorigin</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;https://code.jquery.com/jquery.slim.min.js&quot;</span>
+    integrity<span class="token operator">=</span><span class="token string">&quot;sha256-+hDz/gVbhp24mhOmoIT4Du4F3K5fs9fjjoe0rP5gSLs=&quot;</span>
+    crossorigin<span class="token operator">=</span><span class="token string">&quot;anonymous&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id=""><a href="#" class="header-anchor">#</a></h3> <ul><li><p>当引入跨域的脚本（比如用了 apis.google.com 上的库文件）时，如果这个脚本有错误，因为浏览器的限制（根本原因是协议的规定），是拿不到错误信息的。当本地尝试使用 window.onerror 去记录脚本的错误时，跨域脚本的错误只会返回 Script error。</p></li> <li><p>而 HTML5 新的规定，是可以允许本地获取到跨域脚本的错误信息的，但有两个条件：一是跨域脚本的服务器必须通过 Access-Control-Allow-Origin 头信息允许当前域名可以获取错误信息，二是网页里的 script 标签也必须指明 src 属性指定的地址是支持跨域的地址，也就是 crossorigin 属性。</p></li> <li><p>注意：假设浏览器默认可以将跨域脚本的错误信息返回，那么很容易会造成隐私的泄漏</p></li></ul> <h3 id="integrity"><a href="#integrity" class="header-anchor">#</a> integrity</h3> <ul><li>integrity 属性的值 指定浏览器提取的资源（文件）的base64编码的加密哈希值。如果资源匹配其中一个哈希值，它将被加载。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/" class="prev router-link-active">
+        note
+      </a></span> <span class="next"><a href="/note/model.html">
+        v-model
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7078bb13.js" defer></script><script src="/assets/js/2.b02ef293.js" defer></script><script src="/assets/js/27.7e17fed0.js" defer></script>
+  </body>
+</html>

@@ -7,9 +7,8 @@ module.exports = {
     },
     themeConfig: {
         sidebar: 'auto',
-        lastUpdated: 'Last Updated',
         smoothScroll: true,
-        logo: '/assets/img/logo.jpeg',
+        logo: '/assets/img/logo3.jpeg',
         displayAllHeaders: true,
         nav: [{
                 text: '前端开发学习',
@@ -29,14 +28,39 @@ module.exports = {
                 path: '/learning/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
                 children: [
                     '/learning/',
-                    '/learning/internet'
+                    '/learning/self-direct-learning',
+                    '/learning/internet',
+                    '/learning/browsers',
+                    '/learning/dns',
+                    '/learning/networks',
+                    '/learning/general-front-end',
+                    '/learning/html-css',
+                    '/learning/seo',
+                    '/learning/js',
+                    '/learning/dom',
+                    '/learning/api',
+                    '/learning/node',
+                    '/learning/module',
+                    '/learning/package',
+                    '/learning/version',
+                    '/learning/optimizing',
+                ]
+            },
+            {
+                title: '笔记', 
+                path: '/note/', 
+                children: [
+                    '/note/',
+                    '/note/crossorigin',
+                    '/note/model',
                 ]
             },
             {
                 title: '工具', 
                 path: '/tools/', 
                 children: [
-                    '/tools/'
+                    '/tools/',
+                    '/tools/dev-tools',
                 ]
             },
             {
